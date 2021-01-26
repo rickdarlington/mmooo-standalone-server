@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp5.0</TargetFramework>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="DarkRift, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\Lib\DarkRift.dll</HintPath>
+      </Reference>
+      <Reference Include="DarkRift.Server, Version=2.9.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\Lib\DarkRift.Server.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+[Trace]   DarkRiftServer        System Details:
+                                	OS: Unix 5.8.0.36
+                                	CLS Version: 5.0.2
+                                	DarkRift: 2.9.0.0 - Pro
+[Trace]   PluginFactory         Created plugin 'BichannelListener'.
+[Trace]   DarkRiftServer        Binding listeners to ClientManager as server is externally visible.
+[Trace]   RemoteServerManager   No server registry connector configured, skipping registration.
+[Trace]   DefaultNetworkListener Starting bichannel listener.
+[Info]    DefaultNetworkListener Server mounted, listening on port 4296.
+[Trace]   DefaultNetworkListener Accepted TCP connection from 127.0.0.1:35082.
+[Trace]   DefaultNetworkListener Accepted UDP connection from 127.0.0.1:56156.
+[Info]    ClientManager         New client [0] connected [127.0.0.1:35082|127.0.0.1:56156].
+[Info]    ClientManager         Client [0] disconnected.

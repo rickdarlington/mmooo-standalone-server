@@ -1,0 +1,17 @@
+[Trace]   DarkRiftServer        System Details:
+                                	OS: Unix 5.8.0.36
+                                	CLS Version: 5.0.2
+                                	DarkRift: 2.9.0.0 - Pro
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .
+[Trace]   Server                .

@@ -1,0 +1,1114 @@
+[Trace]   DarkRiftServer        System Details:
+                                	OS: Unix 5.8.0.36
+                                	CLS Version: 5.0.2
+                                	DarkRift: 2.9.0.0 - Pro
+[Trace]   PluginFactory         Created plugin 'Server'.
+[Trace]   PluginManager         Plugin 'Server' has requested that DarkRift operates in thread safe mode.
+[Trace]   DarkRiftServer        Switched into thread safe mode. Expect lower performance!
+[Info]    PluginManager         Loaded plugin Server version 1.0.0
+[Trace]   PluginFactory         Created plugin 'BichannelListener'.
+[Trace]   HttpHealthCheck       HTTP health check started at 'http://localhost:10666/health'
+[Trace]   BadWordFilter         Loading bad word list.
+[Trace]   BadWordFilter         Bad word list loaded sucessfully!
+[Trace]   DarkRiftServer        Binding listeners to ClientManager as server is externally visible.
+[Trace]   RemoteServerManager   No server registry connector configured, skipping registration.
+[Trace]   DefaultNetworkListener Starting bichannel listener.
+[Info]    DefaultNetworkListener Server mounted, listening on port 4296.
+[Trace]   CommandEngine         Command entered: 'sniffer add -a'
+[Info]    Sniffer               Now sniffing all
+[Trace]   DefaultNetworkListener Accepted TCP connection from 127.0.0.1:40914.
+[Trace]   DefaultNetworkListener Accepted UDP connection from 127.0.0.1:56666.
+[Info]    ClientManager         New client [0] connected [127.0.0.1:40914|127.0.0.1:56666].
+[Info]    Server                1 client connections total.
+[Info]    Server                Login request from (asdf).
+[Info]    PlayerConnection      Connection for asdf configured, sending login accept.
+[Info]    Server                1 players online.
+[Info]    Sniffer               [0] Message with tag '0' and 12 bytes of data.
+[Info]    Sniffer               [0] Message with tag '3' and 1 bytes of data.
+[Info]    PlayerConnection      Sending Game Start Data
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203
+[Info]    Sniffer               [0] Message with tag '203' and 6 bytes of data.
+[Info]    PlayerConnection      PlayerConnection Unhandled tag: 203

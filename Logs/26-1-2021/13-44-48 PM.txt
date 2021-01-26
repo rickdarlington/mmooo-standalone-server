@@ -1,0 +1,37 @@
+[Trace]   DarkRiftServer        System Details:
+                                	OS: Unix 5.8.0.36
+                                	CLS Version: 5.0.2
+                                	DarkRift: 2.9.0.0 - Pro
+[Trace]   PluginFactory         Created plugin 'Server'.
+[Trace]   PluginManager         Plugin 'Server' has requested that DarkRift operates in thread safe mode.
+[Trace]   DarkRiftServer        Switched into thread safe mode. Expect lower performance!
+[Info]    PluginManager         Loaded plugin Server version 1.0.0
+[Trace]   PluginFactory         Created plugin 'BichannelListener'.
+[Trace]   HttpHealthCheck       HTTP health check started at 'http://localhost:10666/health'
+[Trace]   BadWordFilter         Loading bad word list.
+[Trace]   BadWordFilter         Bad word list loaded sucessfully!
+[Trace]   DarkRiftServer        Binding listeners to ClientManager as server is externally visible.
+[Trace]   RemoteServerManager   No server registry connector configured, skipping registration.
+[Trace]   DefaultNetworkListener Starting bichannel listener.
+[Info]    DefaultNetworkListener Server mounted, listening on port 4296.
+[Trace]   DefaultNetworkListener Accepted TCP connection from 127.0.0.1:39976.
+[Trace]   DefaultNetworkListener Accepted UDP connection from 127.0.0.1:50732.
+[Info]    ClientManager         New client [0] connected [127.0.0.1:39976|127.0.0.1:50732].
+[Info]    Server                1 client connections total.
+[Info]    Server                Login request from (asdf).
+[Info]    Server                (asdf) logged in.
+[Error]   Client                A plugin encountered an error whilst handling the MessageReceived event.
+                                 System.ArgumentNullException: Value cannot be null. (Parameter 's')
+                                    at System.Text.UnicodeEncoding.GetByteCount(String s)
+                                    at DarkRift.DarkRiftWriter.Write(String value, Encoding encoding) in C:\Users\jamie\Documents\Projects\darkrift-2\DarkRift\DarkRiftWriter.cs:line 263
+                                    at DarkRift.DarkRiftWriter.Write(String value) in C:\Users\jamie\Documents\Projects\darkrift-2\DarkRift\DarkRiftWriter.cs:line 252
+                                    at NetworkingData.PlayerSpawnData.Serialize(SerializeEvent e) in /home/rickd/code/mmooo-server/Plugins/MmoooPlugin/Shared/NetworkingData.cs:line 145
+                                    at DarkRift.DarkRiftWriter.Write[T](T serializable) in C:\Users\jamie\Documents\Projects\darkrift-2\DarkRift\DarkRiftWriter.cs:line 288
+                                    at DarkRift.DarkRiftWriter.Write[T](T[] value) in C:\Users\jamie\Documents\Projects\darkrift-2\DarkRift\DarkRiftWriter.cs:line 545
+                                    at NetworkingData.GameStartData.Serialize(SerializeEvent e) in /home/rickd/code/mmooo-server/Plugins/MmoooPlugin/Shared/NetworkingData.cs:line 223
+                                    at DarkRift.DarkRiftWriter.Write[T](T serializable) in C:\Users\jamie\Documents\Projects\darkrift-2\DarkRift\DarkRiftWriter.cs:line 288
+                                    at DarkRift.Message.Create[T](UInt16 tag, T obj) in C:\Users\jamie\Documents\Projects\darkrift-2\DarkRift\Message.cs:line 212
+                                    at MmoooPlugin.PlayerConnection..ctor(IClient client, LoginRequestData data, Server serverInstance) in /home/rickd/code/mmooo-server/Plugins/MmoooPlugin/MmoooPlugin.cs:line 159
+                                    at MmoooPlugin.Server.OnclientLogin(IClient client, LoginRequestData data) in /home/rickd/code/mmooo-server/Plugins/MmoooPlugin/MmoooPlugin.cs:line 83
+                                    at MmoooPlugin.Server.OnMessage(Object sender, MessageReceivedEventArgs e) in /home/rickd/code/mmooo-server/Plugins/MmoooPlugin/MmoooPlugin.cs:line 60
+                                    at DarkRift.Server.Client.<>c__DisplayClass55_0.<HandleIncomingMessage>g__DoMessageReceived|0() in C:\Users\jamie\Documents\Projects\darkrift-2\DarkRift.Server\Client.cs:line 376
