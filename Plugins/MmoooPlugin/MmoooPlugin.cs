@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Numerics;
 using System.Threading;
 using DarkRift;
@@ -140,6 +141,9 @@ namespace MmoooPlugin
                     case NetworkingData.Tags.PlayerReady:
                         SendGameStart(client);
                         break;
+                    case NetworkingData.Tags.GamePlayerInput:
+                        logger.Info("player movement");
+                        break;
                     default:
                         logger.Info($"PlayerConnection Unhandled tag: {message.Tag}");
                         break;
@@ -149,8 +153,9 @@ namespace MmoooPlugin
 
         private void SendGameStart(IClient client)
         {   
-            NetworkingData.PlayerSpawnData[] players = new NetworkingData.PlayerSpawnData[1];
+            NetworkingData.PlayerSpawnData[] players = new NetworkingData.PlayerSpawnData[2];
             players[0] = new NetworkingData.PlayerSpawnData(client.ID, Name, new Vector2(0, 0));
+            players[1] = new NetworkingData.PlayerSpawnData(99, Name, new Vector2(50, 50));
             
             using (Message m = Message.Create((ushort) NetworkingData.Tags.GameStartData,
                 new NetworkingData.GameStartData(players, ServerInstance.ServerTick)))
