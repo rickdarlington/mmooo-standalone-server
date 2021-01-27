@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Numerics;
 using System.Threading;
 using DarkRift;
@@ -155,7 +154,7 @@ namespace MmoooPlugin
         {   
             NetworkingData.PlayerSpawnData[] players = new NetworkingData.PlayerSpawnData[2];
             players[0] = new NetworkingData.PlayerSpawnData(client.ID, Name, new Vector2(0, 0));
-            players[1] = new NetworkingData.PlayerSpawnData(99, Name, new Vector2(50, 50));
+            players[1] = new NetworkingData.PlayerSpawnData(99, "agent 99", new Vector2(50, 50));
             
             using (Message m = Message.Create((ushort) NetworkingData.Tags.GameStartData,
                 new NetworkingData.GameStartData(players, ServerInstance.ServerTick)))
