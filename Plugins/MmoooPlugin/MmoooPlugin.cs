@@ -16,8 +16,8 @@ namespace MmoooPlugin
 
         public override Version Version => new Version(1, 0, 0);
 
-        private Dictionary<ushort, PlayerConnection> Players = new Dictionary<ushort, PlayerConnection>();
-        private Dictionary<string, PlayerConnection> PlayersByName = new Dictionary<string, PlayerConnection>();
+        public Dictionary<ushort, PlayerConnection> Players = new Dictionary<ushort, PlayerConnection>();
+        public Dictionary<string, PlayerConnection> PlayersByName = new Dictionary<string, PlayerConnection>();
 
         public Server(PluginLoadData pluginLoadData) : base(pluginLoadData)
         {
@@ -113,6 +113,14 @@ namespace MmoooPlugin
 
         private bool playerReady = false;
 
+        public Vector2 ServerPosition = Vector2.Zero;
+
+        public uint InputTick;
+
+        public Buffer<NetworkingData.PlayerInputData> inputBuffer = new Buffer<NetworkingData.PlayerInputData>(1, 2);    
+        
+        public List<NetworkingData.PlayerStateData> PlayerStateDataHistory { get; } = new List<NetworkingData.PlayerStateData>();
+        
         public PlayerConnection(IClient client, NetworkingData.LoginRequestData data, Server serverInstance)
         {
             Client = client;
@@ -141,7 +149,7 @@ namespace MmoooPlugin
                         SendGameStart(client);
                         break;
                     case NetworkingData.Tags.GamePlayerInput:
-                        logger.Info("player movement");
+                        inputBuffer.Add(message.Deserialize<NetworkingData.PlayerInputData>());
                         break;
                     default:
                         logger.Info($"PlayerConnection Unhandled tag: {message.Tag}");
@@ -151,18 +159,34 @@ namespace MmoooPlugin
         }
 
         private void SendGameStart(IClient client)
-        {   
+        {
+            InputTick = ServerInstance.ServerTick;
+            
             NetworkingData.PlayerSpawnData[] players = new NetworkingData.PlayerSpawnData[2];
-            players[0] = new NetworkingData.PlayerSpawnData(client.ID, Name, new Vector2(0, 0));
-            players[1] = new NetworkingData.PlayerSpawnData(99, "agent 99", new Vector2(50, 50));
+            players[0] = new NetworkingData.PlayerSpawnData(client.ID, Name, ServerPosition);
+            players[1] = new NetworkingData.PlayerSpawnData(99, "agent 99", Vector2.Zero);
             
             using (Message m = Message.Create((ushort) NetworkingData.Tags.GameStartData,
-                new NetworkingData.GameStartData(players, ServerInstance.ServerTick)))
+                new NetworkingData.GameStartData(getAllPlayersSpawnData(), ServerInstance.ServerTick)))
             {
                 logger.Info("Sending Game Start Data");
                 
                 client.SendMessage(m, SendMode.Reliable);
             }
+        }
+
+        private NetworkingData.PlayerSpawnData[] getAllPlayersSpawnData()
+        {
+            NetworkingData.PlayerSpawnData[] playerSpawnDatas = new NetworkingData.PlayerSpawnData[ServerInstance.Players.Count];
+            int i = 0;
+            foreach (KeyValuePair<string, PlayerConnection> entry in ServerInstance.PlayersByName)
+            {
+                playerSpawnDatas[i] =
+                    new NetworkingData.PlayerSpawnData(entry.Value.Client.ID, entry.Value.Name, entry.Value.ServerPosition);
+                i++;
+            }
+
+            return playerSpawnDatas;
         }
     }
     
@@ -184,18 +208,55 @@ namespace MmoooPlugin
                 server.ServerTick++; 
                 //logger.Info($"Tick: {server.ServerTick}");
                 long startTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-                
-                //do game stuff, eg. RunAILogic() or RunCollisionManager()
+
+                UpdatePlayerPositions(server.Instance.Players);
                 
                 long currentTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
                 long processingTimeMS = currentTimeMS - startTimeMS;
-                if (processingTimeMS > 1000)
+                if (processingTimeMS > 100)
                 {
                     logger.Error($"Time to optimize some game logic or get better hardware! Update took: {processingTimeMS} ms");
                 }
                 
-                Thread.Sleep(1000 - (int) processingTimeMS);
+                Thread.Sleep(100 - (int) processingTimeMS);
             }
+        }
+
+        public static void UpdatePlayerPositions(Dictionary<ushort, PlayerConnection> players)
+        {
+            /*foreach (KeyValuePair<ushort, PlayerConnection> p in players)
+            {
+                PlayerConnection player = p.Value;
+                var inputs = player.inputBuffer.Get();
+                
+                if (inputs.Length > 0)
+                {
+                    NetworkingData.PlayerInputData input = inputs.First();
+                    player.InputTick++;
+
+                    for (int i = 1; i < inputs.Length; i++)
+                    {
+                        player.InputTick++;
+                        for (int j = 0; j < input.Keyinputs.Length; j++)
+                        {
+                            input.Keyinputs[j] = input.Keyinputs[j] || inputs[i].Keyinputs[j];
+                        }
+                    }
+
+                    //TODO calculate position the same way playerlogic does
+                    //currentPlayerStateData = PlayerLogic.GetNextFrameData(input, currentPlayerStateData);
+                }
+        
+                player.PlayerStateDataHistory.Add(currentPlayerStateData);
+                if (player.PlayerStateDataHistory.Count > 10)
+                {
+                    player.PlayerStateDataHistory.RemoveAt(0);
+                }
+
+                //this updates the position the server is actually tracking
+                player.ServerPosition = currentPlayerStateData.Position;
+                return currentPlayerStateData;
+            }*/
         }
     }
 }
