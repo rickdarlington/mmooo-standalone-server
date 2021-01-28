@@ -123,8 +123,6 @@ namespace MmoooPlugin
         
         public List<NetworkingData.PlayerStateData> PlayerStateDataHistory { get; } = new List<NetworkingData.PlayerStateData>();
         
-        private NetworkingData.PlayerStateData currentPlayerStateData;
-        
         public PlayerConnection(IClient client, NetworkingData.LoginRequestData data, Server serverInstance)
         {
             Client = client;
@@ -214,7 +212,8 @@ namespace MmoooPlugin
                 //logger.Info($"Tick: {server.ServerTick}");
                 long startTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
 
-                UpdatePlayerPositions(server.Instance.Players);
+                NetworkingData.PlayerStateData[] allPlayerPositions = UpdatePlayerPositions(server.Instance.Players);
+                SendPlayerStateDataUpdates(server.Instance.Players, allPlayerPositions);
                 
                 long currentTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
                 long processingTimeMS = currentTimeMS - startTimeMS;
@@ -227,8 +226,11 @@ namespace MmoooPlugin
             }
         }
 
-        public static void UpdatePlayerPositions(Dictionary<ushort, PlayerConnection> players)
+        public static NetworkingData.PlayerStateData[] UpdatePlayerPositions(Dictionary<ushort, PlayerConnection> players)
         {
+            NetworkingData.PlayerStateData[] allPlayerPositions = new NetworkingData.PlayerStateData[players.Count];
+
+            int z = 0;
             foreach (KeyValuePair<ushort, PlayerConnection> p in players)
             {
                 PlayerConnection player = p.Value;
@@ -247,19 +249,36 @@ namespace MmoooPlugin
                             input.Keyinputs[j] = input.Keyinputs[j] || inputs[i].Keyinputs[j];
                         }
                     }
+    
+                    Vector2 moveDirection = FrameData.GetNextFrameData(input, deltaTime/100);
 
-                    //TODO calculate position the same way playerlogic does
-                    
-                    Vector2 moveDirection = FrameData.GetNextFrameData(input, deltaTime);
-
-                    Vector2 newPosition = player.ServerPosition + moveDirection;
-                    player.ServerPosition = player.ServerPosition + newPosition;
+                    player.ServerPosition = Vector2.Add(player.ServerPosition, moveDirection);
                 }
-        
-                player.PlayerStateDataHistory.Add(new NetworkingData.PlayerStateData(player.Client.ID, player.ServerPosition, 0));
+
+                NetworkingData.PlayerStateData currentState =
+                    new NetworkingData.PlayerStateData(player.Client.ID, player.ServerPosition, 0);
+                player.PlayerStateDataHistory.Add(currentState);
                 if (player.PlayerStateDataHistory.Count > 10)
                 {
                     player.PlayerStateDataHistory.RemoveAt(0);
+                }
+
+                allPlayerPositions[z] = currentState;
+                z++;
+            }
+
+            return allPlayerPositions;
+        }
+
+        public static void SendPlayerStateDataUpdates(Dictionary<ushort, PlayerConnection> players, NetworkingData.PlayerStateData[] positions)
+        {
+            foreach (KeyValuePair<ushort, PlayerConnection> p in players)
+            {
+                using (Message m = Message.Create(
+                    (ushort)NetworkingData.Tags.GameUpdate, 
+                    new NetworkingData.GameUpdateData(p.Value.InputTick, positions, new NetworkingData.PlayerSpawnData[]{}, new NetworkingData.PlayerDespawnData[]{})))
+                {
+                    p.Value.Client.SendMessage(m, SendMode.Reliable);
                 }
             }
         }
