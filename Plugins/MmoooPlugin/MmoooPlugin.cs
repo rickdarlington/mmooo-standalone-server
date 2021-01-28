@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 using System.Threading;
 using DarkRift;
 using DarkRift.Server;
+using Shared;
 
 namespace MmoooPlugin
 {
@@ -121,6 +123,8 @@ namespace MmoooPlugin
         
         public List<NetworkingData.PlayerStateData> PlayerStateDataHistory { get; } = new List<NetworkingData.PlayerStateData>();
         
+        private NetworkingData.PlayerStateData currentPlayerStateData;
+        
         public PlayerConnection(IClient client, NetworkingData.LoginRequestData data, Server serverInstance)
         {
             Client = client;
@@ -193,6 +197,7 @@ namespace MmoooPlugin
     public class GameLogic
     {
         private Logger logger;
+        private static int deltaTime = 100;
         
         public GameLogic(Server s)
         {
@@ -213,18 +218,18 @@ namespace MmoooPlugin
                 
                 long currentTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
                 long processingTimeMS = currentTimeMS - startTimeMS;
-                if (processingTimeMS > 100)
+                if (processingTimeMS > deltaTime)
                 {
                     logger.Error($"Time to optimize some game logic or get better hardware! Update took: {processingTimeMS} ms");
                 }
                 
-                Thread.Sleep(100 - (int) processingTimeMS);
+                Thread.Sleep(deltaTime - (int) processingTimeMS);
             }
         }
 
         public static void UpdatePlayerPositions(Dictionary<ushort, PlayerConnection> players)
         {
-            /*foreach (KeyValuePair<ushort, PlayerConnection> p in players)
+            foreach (KeyValuePair<ushort, PlayerConnection> p in players)
             {
                 PlayerConnection player = p.Value;
                 var inputs = player.inputBuffer.Get();
@@ -244,19 +249,19 @@ namespace MmoooPlugin
                     }
 
                     //TODO calculate position the same way playerlogic does
-                    //currentPlayerStateData = PlayerLogic.GetNextFrameData(input, currentPlayerStateData);
+                    
+                    Vector2 moveDirection = FrameData.GetNextFrameData(input, deltaTime);
+
+                    Vector2 newPosition = player.ServerPosition + moveDirection;
+                    player.ServerPosition = player.ServerPosition + newPosition;
                 }
         
-                player.PlayerStateDataHistory.Add(currentPlayerStateData);
+                player.PlayerStateDataHistory.Add(new NetworkingData.PlayerStateData(player.Client.ID, player.ServerPosition, 0));
                 if (player.PlayerStateDataHistory.Count > 10)
                 {
                     player.PlayerStateDataHistory.RemoveAt(0);
                 }
-
-                //this updates the position the server is actually tracking
-                player.ServerPosition = currentPlayerStateData.Position;
-                return currentPlayerStateData;
-            }*/
+            }
         }
     }
 }
