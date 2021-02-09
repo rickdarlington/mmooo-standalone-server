@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.Rider2019.1/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_MmoooPlugin.-1312993821.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2019.1/system/resharper-host/local/Transient/ReSharperHost/v191/SolutionCaches/_MmoooPlugin.-855454265.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="ConnectionManager.cs" t="Include" />
       <e p="MmoooPlugin.cs" t="Include" />
       <e p="MmoooPlugin.csproj" t="IncludeRecursive" />
       <e p="MmoooPlugin.sln" t="IncludeFlat" />
+      <e p="Player.cs" t="Include" />
       <e p="Shared" t="Include">
-        <e p="Buffer.cs" t="Include" />
-        <e p="Buffer.cs.meta" t="Include" />
-        <e p="FrameData.cs" t="Include" />
-        <e p="FrameData.cs.meta" t="Include" />
         <e p="NetworkingData.cs" t="Include" />
         <e p="NetworkingData.cs.meta" t="Include" />
+        <e p="PlayerMovement.cs" t="Include" />
+        <e p="PlayerMovement.cs.meta" t="Include" />
       </e>
       <e p="bin" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive">

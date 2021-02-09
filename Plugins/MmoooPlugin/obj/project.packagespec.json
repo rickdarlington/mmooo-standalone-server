@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/rickd/code/mmooo-server/Plugins/MmoooPlugin/MmoooPlugin.csproj",
+    "projectUniqueName": "/home/rickd/code/mmooo/mmooo-standalone-server/Plugins/MmoooPlugin/MmoooPlugin.csproj",
     "projectName": "MmoooPlugin",
-    "projectPath": "/home/rickd/code/mmooo-server/Plugins/MmoooPlugin/MmoooPlugin.csproj",
-    "outputPath": "/home/rickd/code/mmooo-server/Plugins/MmoooPlugin/obj/",
+    "projectPath": "/home/rickd/code/mmooo/mmooo-standalone-server/Plugins/MmoooPlugin/MmoooPlugin.csproj",
+    "outputPath": "/home/rickd/code/mmooo/mmooo-standalone-server/Plugins/MmoooPlugin/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp5.0"

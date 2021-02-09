@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rickd/code/mmooo-server/Plugins/MmoooPlugin/MmoooPlugin.csproj",
+      "projectUniqueName": "/home/rickd/code/mmooo/mmooo-standalone-server/Plugins/MmoooPlugin/MmoooPlugin.csproj",
       "projectName": "MmoooPlugin",
-      "projectPath": "/home/rickd/code/mmooo-server/Plugins/MmoooPlugin/MmoooPlugin.csproj",
+      "projectPath": "/home/rickd/code/mmooo/mmooo-standalone-server/Plugins/MmoooPlugin/MmoooPlugin.csproj",
       "packagesPath": "/home/rickd/.nuget/packages/",
-      "outputPath": "/home/rickd/code/mmooo-server/Plugins/MmoooPlugin/obj/",
+      "outputPath": "/home/rickd/code/mmooo/mmooo-standalone-server/Plugins/MmoooPlugin/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/rickd/.config/NuGet/NuGet.Config"
