@@ -11,7 +11,7 @@ namespace MmoooPlugin
     public sealed class Server : Plugin
     {
         public override Version Version => new Version(1, 0, 0);
-        public override bool ThreadSafe => false;
+        public override bool ThreadSafe => true;
         
         private static Server instance;
         public static Server Instance => instance;
@@ -84,7 +84,7 @@ namespace MmoooPlugin
 
         void GameLoop()
         {
-            long tickRate = 1000 / 50; //20 ticks per second
+            long tickRate = 1000 / 100; //10 ticks per second
             int dt = 0;
             while (true)
             {
