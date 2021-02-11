@@ -17,6 +17,7 @@ namespace MmoooPlugin
         public static Server Instance => instance;
         
         public uint ServerTick;
+        public byte RandomSpriteRow = 0;
         
         public readonly Dictionary<ushort, Player> Players = new Dictionary<ushort, Player>();
         public readonly Dictionary<string, Player> PlayersByName = new Dictionary<string, Player>();
@@ -28,6 +29,13 @@ namespace MmoooPlugin
             ClientManager.ClientDisconnected += ConnectionManager.Disconnected;
 
             new GameLogic(this);
+        }
+        
+        //TODO refactor: temporary
+        public byte getNextSpriteRow()
+        {
+            RandomSpriteRow++;
+            return RandomSpriteRow;
         }
         
         public void AddPlayer(ushort id, string name, Player p)
@@ -44,7 +52,7 @@ namespace MmoooPlugin
             foreach (KeyValuePair<ushort, Player> kv in Players)
             {
                 using (Message m = Message.Create((ushort) NetworkingData.Tags.PlayerSpawn,
-                    new NetworkingData.PlayerSpawnData(p.Client.ID, p.Name, p.ServerPosition)))
+                    new NetworkingData.PlayerSpawnData(p.Client.ID, p.Name, p.spriteRow, p.ServerPosition)))
                 {
                     kv.Value.SendMessage(m, SendMode.Reliable);
                 }
@@ -126,6 +134,7 @@ namespace MmoooPlugin
                         float timeStep = ((float)dt / 1000) / numInputs;
                         
                         player.ServerPosition = PlayerMovement.MovePlayer(nextInput, player.ServerPosition, timeStep);
+                        player.LookDirection = nextInput.LookDirection;
                         lastProcessedInput = nextInput.InputSeq;
                     }
                     

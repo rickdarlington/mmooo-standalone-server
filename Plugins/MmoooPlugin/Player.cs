@@ -17,14 +17,16 @@ namespace MmoooPlugin
         private bool playerReady = false;
         public Vector2 ServerPosition = Vector2.Zero;
         public byte LookDirection = 0;
+        public byte spriteRow = 0;
 
-        public uint InputTick;
-        
         public Player(IClient client, NetworkingData.LoginRequestData data)
         {
             Client = client;
             Name = data.Name;
             client.MessageReceived += OnPlayerMessage;
+
+            //TODO refactor: this should come from db/configuration/etc
+            spriteRow = Server.Instance.getNextSpriteRow();
 
             logger.Info($"Connection for {Name} configured, sending login accept.");
 
@@ -57,8 +59,6 @@ namespace MmoooPlugin
 
         private void SendGameStart(IClient client)
         {
-            InputTick = Server.Instance.ServerTick;
-            
             using (Message m = Message.Create((ushort) NetworkingData.Tags.GameStartData,
                 new NetworkingData.GameStartData(getAllPlayersSpawnData(), Server.Instance.ServerTick)))
             {
@@ -68,14 +68,14 @@ namespace MmoooPlugin
             }
         }
 
-        private NetworkingData.PlayerSpawnData[] getAllPlayersSpawnData()
+        private static NetworkingData.PlayerSpawnData[] getAllPlayersSpawnData()
         {
             NetworkingData.PlayerSpawnData[] playerSpawnDatas = new NetworkingData.PlayerSpawnData[Server.Instance.Players.Count];
             int i = 0;
             foreach (KeyValuePair<string, Player> entry in Server.Instance.PlayersByName)
             {
                 Player p = entry.Value;
-                playerSpawnDatas[i] = new NetworkingData.PlayerSpawnData(p.Client.ID, p.Name, p.ServerPosition);
+                playerSpawnDatas[i] = new NetworkingData.PlayerSpawnData(p.Client.ID, p.Name, p.spriteRow, p.ServerPosition);
                 i++;
             }
 
