@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Shared/PlayerMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            <state relative-caret-position="555">
+              <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
               <folding>
                 <marker date="1613064316574" expanded="true" signature="6:54" ph="..." />
                 <marker date="1613064316574" expanded="true" signature="84:1082" ph="{...}" />
@@ -303,7 +303,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175640000" />
+    <option name="totallyTimeSpent" value="176435000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -786,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Shared/PlayerMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        <state relative-caret-position="555">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
           <folding>
             <marker date="1613064316574" expanded="true" signature="6:54" ph="..." />
             <marker date="1613064316574" expanded="true" signature="84:1082" ph="{...}" />
