@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Numerics;
 using DarkRift;
 using DarkRift.Server;
+using MmoooPlugin.Shared;
 
 namespace MmoooPlugin
 {
@@ -18,6 +20,7 @@ namespace MmoooPlugin
         public Vector2 ServerPosition = Vector2.Zero;
         public byte LookDirection = 0;
         public byte spriteRow = 0;
+        public uint LastProcessedInput = 0;
 
         public Player(IClient client, NetworkingData.LoginRequestData data)
         {
@@ -80,6 +83,11 @@ namespace MmoooPlugin
             }
 
             return playerSpawnDatas;
+        }
+
+        public NetworkingData.PlayerStateData getStateData()
+        {
+            return new NetworkingData.PlayerStateData(Client.ID, ServerPosition, LookDirection, LastProcessedInput);
         }
 
         public void SendMessage(Message m, SendMode sm)

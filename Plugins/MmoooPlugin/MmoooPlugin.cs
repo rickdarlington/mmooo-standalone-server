@@ -1,6 +1,6 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 using System.Threading;
 using DarkRift;
 using DarkRift.Server;
@@ -19,6 +19,8 @@ namespace MmoooPlugin
         public uint ServerTick;
         public byte RandomSpriteRow = 0;
         
+        public readonly float playerInputTimestep = 1f / 30f;
+        
         public readonly Dictionary<ushort, Player> Players = new Dictionary<ushort, Player>();
         public readonly Dictionary<string, Player> PlayersByName = new Dictionary<string, Player>();
 
@@ -28,7 +30,7 @@ namespace MmoooPlugin
             ClientManager.ClientConnected += ConnectionManager.Connected;
             ClientManager.ClientDisconnected += ConnectionManager.Disconnected;
 
-            new GameLogic(this);
+            new GameLogic();
         }
         
         //TODO refactor: temporary
@@ -84,23 +86,24 @@ namespace MmoooPlugin
     public class GameLogic
     {
         private Logger logger = Server.Instance.LogManager.GetLoggerFor("GameLogic");
-        public GameLogic(Server s)
+        public GameLogic()
         {
-            Thread t = new Thread(GameLoop);
-            t.Start();
+            Thread ul = new Thread(StateUpdateLoop);
+            Thread al = new Thread(AILoop);
+            ul.Start();
+            al.Start();
         }
 
-        void GameLoop()
+        void AILoop()
         {
-            long tickRate = 1000 / 100; //10 ticks per second
+            long tickRate = 1000; //1 AI update per second
             int dt = 0;
             while (true)
             {
                 long startTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
-
-                var positionUpdates = UpdatePlayerPositions(Server.Instance.Players, dt);
-                SendPlayerStateDataUpdates(positionUpdates);
-
+                
+                //TODO do AI logic here
+                
                 long finishTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
                 long elapsedTimeMS = finishTimeMS - startTimeMS;
                 
@@ -111,57 +114,80 @@ namespace MmoooPlugin
                 }
                 else
                 {
-                    logger.Error($"Game loop update took longer ({elapsedTimeMS}) than tick {tickRate}");
+                    logger.Error($"AI loop update took longer ({elapsedTimeMS}) than tick {tickRate}");
                 }
             }
         }
 
-        static NetworkingData.PlayerStateData[] UpdatePlayerPositions(Dictionary<ushort, Player> players, int dt)
+        void StateUpdateLoop()
         {
-            NetworkingData.PlayerStateData[] updates = new NetworkingData.PlayerStateData[players.Count];
+            //update loop 
+            long tickRate = 100; //10 ticks per second
+            int dt = 0;
+            while (true)
+            {
+                long startTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
 
-            int i = 0;
-            foreach (KeyValuePair<ushort, Player> kv in players)
+                UpdatePlayerPositions(Server.Instance.playerInputTimestep, Server.Instance.Players.Values.ToArray());
+                SendPlayerStateDataUpdates();
+                
+                long finishTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
+                long elapsedTimeMS = finishTimeMS - startTimeMS;
+                
+                if (elapsedTimeMS < tickRate)
+                {
+                    dt = (int)tickRate - (int)elapsedTimeMS;
+                    Thread.Sleep(dt);
+                }
+                else
+                {
+                    logger.Error($"Position update took longer ({elapsedTimeMS}) than tick {tickRate}");
+                }
+            }
+        }
+        
+        static void UpdatePlayerPositions(float timeStep, Array players)
+        {
+            //TODO check if player is trying to send inputs too fast here (and ban)
+            
+            NetworkingData.PlayerStateData[] updates = new NetworkingData.PlayerStateData[players.Length];
+
+            foreach (Player player in players)
             {
                 uint lastProcessedInput = 0;
-                Player player = kv.Value;
                 if (player.inputBuffer.Count > 0)
                 {
                     int numInputs = player.inputBuffer.Count;
                     for (int j = 0; j < numInputs; j++)
                     {
                         NetworkingData.PlayerInputData nextInput = player.inputBuffer.Dequeue();
-                        float timeStep = ((float)dt / 1000) / numInputs;
-                        
+
                         player.ServerPosition = PlayerMovement.MovePlayer(nextInput, player.ServerPosition, timeStep);
                         player.LookDirection = nextInput.LookDirection;
-                        lastProcessedInput = nextInput.InputSeq;
+                        player.LastProcessedInput = nextInput.InputSeq;
                     }
-                    
-                    updates[i] = new NetworkingData.PlayerStateData(player.Client.ID, player.ServerPosition, player.LookDirection, lastProcessedInput);
-                    //TODO scroll warning
-                    //Server.Instance.LogManager.GetLoggerFor("GameLoop").Info($"{player.clientId} pos {player.ServerPosition.X}, {player.ServerPosition.Y}");
                 }
-                else
-                {
-                    updates[i] = new NetworkingData.PlayerStateData(player.Client.ID, player.ServerPosition, player.LookDirection, 0);
-                }
+            }
+        }
+        
+        static void SendPlayerStateDataUpdates()
+        {
+            var players = Server.Instance.Players.Values.ToArray();
+            NetworkingData.PlayerStateData[] positions = new NetworkingData.PlayerStateData[players.Length];
+
+            int i = 0;
+            foreach (var player in players)
+            {
+                positions[i] = player.getStateData();
                 i++;
             }
-
-            return updates;
-        }
-
-        static void SendPlayerStateDataUpdates(NetworkingData.PlayerStateData[] positions)
-        {
+            
             foreach (KeyValuePair<ushort, Player> p in Server.Instance.Players)
             {
                 NetworkingData.GameUpdateData data = new NetworkingData.GameUpdateData(positions);
-                //Server.Instance.LogManager.GetLoggerFor("preserialize").Info(data.toString());
                 using (Message m = Message.Create((ushort)NetworkingData.Tags.GameUpdate, data))
                 {
                     p.Value.SendMessage(m, SendMode.Reliable);
-                    NetworkingData.GameUpdateData gameUpdateData = m.Deserialize<NetworkingData.GameUpdateData>();
                 }
             }
         }
