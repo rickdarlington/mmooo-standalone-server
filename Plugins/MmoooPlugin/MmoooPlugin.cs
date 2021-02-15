@@ -148,10 +148,8 @@ namespace MmoooPlugin
         
         static void UpdatePlayerPositions(float timeStep, Array players)
         {
-            //TODO check if player is trying to send inputs too fast here (and ban)
-            
-            NetworkingData.PlayerStateData[] updates = new NetworkingData.PlayerStateData[players.Length];
-
+            //TODO check if inputbuffer length is > than number they can send at 30fps (drop the extras)
+            //TODO if so, they're trying to send inputs too fast (ban)
             foreach (Player player in players)
             {
                 uint lastProcessedInput = 0;
