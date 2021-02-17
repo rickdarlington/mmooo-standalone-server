@@ -67,8 +67,7 @@ namespace MmoooPlugin
             
             client.MessageReceived -= OnMessage;
             
-            Player p = new Player(client, data);
-            Server.Instance.AddPlayer(client.ID, data.Name, p);
+            Server.Instance.AddPlayer(client.ID, new Player(client, data));
         }
     }
 }

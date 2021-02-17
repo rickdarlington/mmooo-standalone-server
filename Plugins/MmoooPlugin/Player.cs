@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Numerics;
@@ -39,7 +40,7 @@ namespace MmoooPlugin
                 client.SendMessage(m, SendMode.Reliable);
             }
         }
-
+        
         private void OnPlayerMessage(object sender, MessageReceivedEventArgs args)
         {
             IClient client = (IClient) sender;
@@ -52,6 +53,13 @@ namespace MmoooPlugin
                         break;
                     case NetworkingData.Tags.PlayerInput:
                         inputBuffer.Enqueue(message.Deserialize<NetworkingData.PlayerInputData>());
+                        break;
+                    case NetworkingData.Tags.PlayerInputs:
+                        var datas = message.Deserialize<NetworkingData.PlayerInputDatas>();
+                        foreach (var data in datas.InputDatas)
+                        {
+                            inputBuffer.Enqueue(data);
+                        }
                         break;
                     default:
                         logger.Info($"PlayerConnection Unhandled tag: {message.Tag}");

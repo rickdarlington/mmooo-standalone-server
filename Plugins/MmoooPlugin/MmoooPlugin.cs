@@ -1,7 +1,9 @@
 ﻿﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
+ using System.Diagnostics;
+ using System.Linq;
+ using System.Numerics;
+ using System.Threading;
 using DarkRift;
 using DarkRift.Server;
 using MmoooPlugin.Shared;
@@ -15,10 +17,12 @@ namespace MmoooPlugin
         
         private static Server instance;
         public static Server Instance => instance;
+
+        private int playerStartId = 1000;
         
         public uint ServerTick;
-        public byte RandomSpriteRow = 0;
-        
+        public byte RandomSpriteRow = 1;
+
         public readonly float playerInputTimestep = 1f / 30f;
         
         public readonly Dictionary<ushort, Player> Players = new Dictionary<ushort, Player>();
@@ -36,16 +40,20 @@ namespace MmoooPlugin
         //TODO refactor: temporary
         public byte getNextSpriteRow()
         {
+            if (RandomSpriteRow > 10)
+            {
+                RandomSpriteRow = 0;
+            }
             RandomSpriteRow++;
             return RandomSpriteRow;
         }
-        
-        public void AddPlayer(ushort id, string name, Player p)
+
+        public void AddPlayer(ushort id, Player p)
         {
             Players.Add(id, p);
-            PlayersByName.Add(name, p);
+            PlayersByName.Add(p.Name, p);
             SendPlayerSpawnToAll(p);
-            Logger.Info($"Adding player \"{name}\" (id: {id})");
+            Logger.Info($"Adding player \"{p.Name}\" (id: {id})");
             Logger.Info($"{Players.Count} players online.");
         }
 
@@ -53,10 +61,14 @@ namespace MmoooPlugin
         {
             foreach (KeyValuePair<ushort, Player> kv in Players)
             {
-                using (Message m = Message.Create((ushort) NetworkingData.Tags.PlayerSpawn,
-                    new NetworkingData.PlayerSpawnData(p.Client.ID, p.Name, p.spriteRow, p.ServerPosition)))
+                //TODO temporary, refactor (ids > 999 are NPCs)
+                if (p.Client != null)
                 {
-                    kv.Value.SendMessage(m, SendMode.Reliable);
+                    using (Message m = Message.Create((ushort) NetworkingData.Tags.PlayerSpawn,
+                        new NetworkingData.PlayerSpawnData(p.Client.ID, p.Name, p.spriteRow, p.ServerPosition)))
+                    {
+                        kv.Value.SendMessage(m, SendMode.Reliable);
+                    }
                 }
             }
         }
@@ -128,7 +140,7 @@ namespace MmoooPlugin
             {
                 long startTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
 
-                UpdatePlayerPositions(Server.Instance.playerInputTimestep, Server.Instance.Players.Values.ToArray());
+                UpdatePlayerPositions(Server.Instance.Players.Values.ToArray());
                 SendPlayerStateDataUpdates();
                 
                 long finishTimeMS = DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
@@ -146,10 +158,8 @@ namespace MmoooPlugin
             }
         }
         
-        static void UpdatePlayerPositions(float timeStep, Array players)
+        static void UpdatePlayerPositions(Array players)
         {
-            //TODO check if inputbuffer length is > than number they can send at 30fps (drop the extras)
-            //TODO if so, they're trying to send inputs too fast (ban)
             foreach (Player player in players)
             {
                 uint lastProcessedInput = 0;
@@ -160,10 +170,12 @@ namespace MmoooPlugin
                     {
                         NetworkingData.PlayerInputData nextInput = player.inputBuffer.Dequeue();
 
-                        player.ServerPosition = PlayerMovement.MovePlayer(nextInput, player.ServerPosition, timeStep);
+                        player.ServerPosition = PlayerMovement.MovePlayer(nextInput, player.ServerPosition, nextInput.DeltaTime);
                         player.LookDirection = nextInput.LookDirection;
                         player.LastProcessedInput = nextInput.InputSeq;
                     }
+                    
+                    //TODO remove me Server.Instance.LogManager.GetLoggerFor("updatePlayerPositions()").Info($"{player.ServerPosition.X}, {player.ServerPosition.Y}");
                 }
             }
         }
