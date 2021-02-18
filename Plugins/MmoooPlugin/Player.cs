@@ -1,23 +1,22 @@
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Numerics;
 using DarkRift;
 using DarkRift.Server;
-using MmoooPlugin.Shared;
 
 namespace MmoooPlugin
 {
     public class Player
     {
-        public string Name { get; }
         public IClient Client { get; }
         private Logger logger = Server.Instance.LogManager.GetLoggerFor("Player");
-
-        //TODO should make this not public 
+        
+        //buffer of unprocessed inputs for this player.  Processed in GameManager.StateUpdateLoop
         public Queue<NetworkingData.PlayerInputData> inputBuffer = new Queue<NetworkingData.PlayerInputData>();
         
         private bool playerReady = false;
+        
+        public string Name { get; }
         public Vector2 ServerPosition = Vector2.Zero;
         public byte LookDirection = 0;
         public byte spriteRow = 0;
@@ -52,6 +51,8 @@ namespace MmoooPlugin
                         SendGameStart(client);
                         break;
                     case NetworkingData.Tags.PlayerInput:
+                        //TODO we shouldn't hit this anymore since we're batching inputs.  Hitting here means you missed something in the client
+                        logger.Warning($"Got non-batched input from player id {client.ID}");
                         inputBuffer.Enqueue(message.Deserialize<NetworkingData.PlayerInputData>());
                         break;
                     case NetworkingData.Tags.PlayerInputs:

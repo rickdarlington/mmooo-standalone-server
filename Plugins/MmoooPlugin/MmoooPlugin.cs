@@ -169,13 +169,14 @@ namespace MmoooPlugin
                     for (int j = 0; j < numInputs; j++)
                     {
                         NetworkingData.PlayerInputData nextInput = player.inputBuffer.Dequeue();
-
+                        
+                        
+                        //TODO we use the input's delta time but this gives the client a bit of authority
+                        //TODO we should probably at least validate and throw invalid ones out
                         player.ServerPosition = PlayerMovement.MovePlayer(nextInput, player.ServerPosition, nextInput.DeltaTime);
                         player.LookDirection = nextInput.LookDirection;
                         player.LastProcessedInput = nextInput.InputSeq;
                     }
-                    
-                    //TODO remove me Server.Instance.LogManager.GetLoggerFor("updatePlayerPositions()").Info($"{player.ServerPosition.X}, {player.ServerPosition.Y}");
                 }
             }
         }
