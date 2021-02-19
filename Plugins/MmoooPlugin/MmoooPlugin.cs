@@ -133,6 +133,7 @@ namespace MmoooPlugin
 
         void StateUpdateLoop()
         {
+            logger.Info("Starting state update thread");
             //update loop 
             long tickRate = 100; //10 ticks per second
             int dt = 0;
