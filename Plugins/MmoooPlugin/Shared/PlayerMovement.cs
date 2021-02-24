@@ -5,6 +5,7 @@ namespace MmoooPlugin.Shared
 {
     public static class PlayerMovement
     {
+        private static float moveSpeed = 2.25f;
         public static Vector2 MovePlayer(NetworkingData.PlayerInputData input, Vector2 position, float timeStep)
         {
             //TODO not sure why we're getting a null reference occasionally here...  punt for now, but investigate
@@ -30,7 +31,7 @@ namespace MmoooPlugin.Shared
                 if (d) moveDirection.X = 1;
             }
 
-            position += moveDirection * timeStep;
+            position += moveDirection * timeStep * moveSpeed;
 
             return position;
         }

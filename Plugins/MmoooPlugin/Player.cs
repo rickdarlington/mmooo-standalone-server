@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Numerics;
 using DarkRift;
 using DarkRift.Server;
@@ -13,9 +12,9 @@ namespace MmoooPlugin
         
         //buffer of unprocessed inputs for this player.  Processed in GameManager.StateUpdateLoop
         public Queue<NetworkingData.PlayerInputData> inputBuffer = new Queue<NetworkingData.PlayerInputData>();
-        
-        private bool playerReady = false;
-        
+
+        public bool PlayerReady;
+
         public string Name { get; }
         public Vector2 ServerPosition = Vector2.Zero;
         public byte LookDirection = 0;
@@ -26,6 +25,7 @@ namespace MmoooPlugin
         {
             Client = client;
             Name = data.Name;
+            PlayerReady = false;
             client.MessageReceived += OnPlayerMessage;
 
             //TODO refactor: this should come from db/configuration/etc
@@ -71,6 +71,7 @@ namespace MmoooPlugin
 
         private void SendGameStart(IClient client)
         {
+            PlayerReady = true;
             using (Message m = Message.Create((ushort) NetworkingData.Tags.GameStartData,
                 new NetworkingData.GameStartData(getAllPlayersSpawnData(), Server.Instance.ServerTick)))
             {

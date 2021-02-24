@@ -22,8 +22,6 @@ namespace MmoooPlugin
         
         public uint ServerTick;
         public byte RandomSpriteRow = 1;
-
-        public readonly float playerInputTimestep = 1f / 30f;
         
         public readonly Dictionary<ushort, Player> Players = new Dictionary<ushort, Player>();
         public readonly Dictionary<string, Player> PlayersByName = new Dictionary<string, Player>();
@@ -36,7 +34,7 @@ namespace MmoooPlugin
 
             new GameLogic();
         }
-        
+
         //TODO refactor: temporary
         public byte getNextSpriteRow()
         {
@@ -62,7 +60,7 @@ namespace MmoooPlugin
             foreach (KeyValuePair<ushort, Player> kv in Players)
             {
                 //TODO temporary, refactor (ids > 999 are NPCs)
-                if (p.Client != null)
+                if (p.Client != null && p.PlayerReady)
                 {
                     using (Message m = Message.Create((ushort) NetworkingData.Tags.PlayerSpawn,
                         new NetworkingData.PlayerSpawnData(p.Client.ID, p.Name, p.spriteRow, p.ServerPosition)))
@@ -171,9 +169,9 @@ namespace MmoooPlugin
                     {
                         NetworkingData.PlayerInputData nextInput = player.inputBuffer.Dequeue();
                         
-                        
                         //TODO we use the input's delta time but this gives the client a bit of authority
-                        //TODO we should probably at least validate and throw invalid ones out
+                        //we should probably at least validate and throw invalid ones out, or verify their
+                        //total DT doesn't exceed the fixedupdate rate on the client of 1/60f
                         player.ServerPosition = PlayerMovement.MovePlayer(nextInput, player.ServerPosition, nextInput.DeltaTime);
                         player.LookDirection = nextInput.LookDirection;
                         player.LastProcessedInput = nextInput.InputSeq;
