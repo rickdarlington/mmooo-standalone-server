@@ -27,7 +27,7 @@ namespace MmoooPlugin
                 
                 //TODO need to call destroy type method on playerConnection?
             }
-
+            
             args.Client.MessageReceived -= OnMessage;
         }
 
